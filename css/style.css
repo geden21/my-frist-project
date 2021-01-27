@@ -139,25 +139,30 @@ section{
 }
 .container{
     display: grid;
-    height: 750px;
-    padding: 0 25px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color:rgb(218, 215, 215);
-    border-radius: 15px;
     grid-gap:10px !important;
 }
 .main{
     display:grid;
     grid-template-columns:30% 30% 30%;
-    grid-template-rows: 2.6em 35% 35% 1em;
+    grid-template-rows: 2.6em 37% 37% 1em;
     grid-gap:10px;
+    background-color:rgb(218, 215, 215);
+    border-radius: 15px 15px;
+    padding-left: 45px;
+    height: 625px;
 }
 .side{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: 2.6em 20% 20% 20%;
-    grid-gap:10px;
+    grid-gap:25px;
+    background-color:rgb(218, 215, 215);
+    border-radius: 15px 15px;
+    padding-left: 45px;
+    height: 625px;
+    padding-right: 45px;
 }
 .col{
     display: grid;
@@ -231,7 +236,7 @@ section{
     grid-row: 1;
 }
 .main div:nth-child(1) {
-  background-color:rgb(218, 215, 215);
+  
 }
 .main div:nth-child(2) {
   background-color: #ffffff;
@@ -258,12 +263,10 @@ section{
         border-radius: 15px 15px;
 }  
 .main div:nth-child(8) {
-    background-color:rgb(218, 215, 215);
-    border-radius: 15px 15px;
+  
 }  
 .side div:nth-child(1) {
-    background-color:rgb(218, 215, 215);
-    border-radius: 15px 15px;
+    
 }  
 .side div:nth-child(2) {
     background-color:#ffffff;
