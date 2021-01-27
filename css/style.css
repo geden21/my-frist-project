@@ -236,6 +236,7 @@ section{
     grid-row: 1;
 }
 .main div:nth-child(1) {
+    background-color: none;
   
 }
 .main div:nth-child(2) {
@@ -263,10 +264,10 @@ section{
         border-radius: 15px 15px;
 }  
 .main div:nth-child(8) {
-  
+     background-color: none;
 }  
 .side div:nth-child(1) {
-    
+    background-color: none;
 }  
 .side div:nth-child(2) {
     background-color:#ffffff;
