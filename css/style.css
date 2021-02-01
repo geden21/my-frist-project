@@ -435,20 +435,23 @@ h4{
         display: none;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     body{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    #mheader{
+        margin-left: 10px;
     }
     .hide{
         display: none;
     }
-    .header1 .nav{
-     margin-left: 100px;
-}
+    
     .activitie{
             display:inline-block;
+            width: 300px;
             height: 100%;
+            margin-left: 5px;
     }
     .row{
         display: inline-block;
@@ -457,15 +460,16 @@ h4{
     width: 100%;
 }
 .infom p{
-    font-size: 12px;
+    font-size: 6px;
 }
 .link a{
  display: block;
 }
 
 .header1{
-    width: 400px;
-    margin-left: -0.1rem;
+    width: 300px;
+    margin-right: 40px;
+    
 }
 
 
@@ -480,23 +484,27 @@ h4{
 .main{
     display: inline-block;
     grid-area: main;
-     border-radius: 0;
-     
-     width: 400px;
+    width:340px;
     height: 100%;
     background-color: white;
     margin-left: -45px;
+   
 }
 .side{
     grid-area: side;
      border-radius: 0;
      padding-left: 20px;
      padding-right: 20px;
-     width: 350px;
+     width: 300px;
 }
 .activitie img{
     width: 100%;
     height:100px;
+}
+.footer{
+    display: block;
+    width: 320px;
+    margin-left: 5px;
 }
 .act2{
    
@@ -528,4 +536,22 @@ hr{
     border: none;
     background:linear-gradient(to left,rgb(218, 215, 215), blue);
 }
+input[type="text"] {
+    width:150px;
+   }
+   input[type="submit"] {
+    width: 70px;
+}
+
+.link a{
+   
+   border-radius: 70px;
+   font-size: 12px;
+}
+h2{
+    font-size: 18px;
+}
+section{
+    margin-left: 5px;
+   
 }
