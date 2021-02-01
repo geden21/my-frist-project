@@ -1,5 +1,7 @@
 
-
+* {
+    box-sizing: border-box;
+  }
 body {
      font-family: 'Raleway', sans-serif;
 }
@@ -131,7 +133,8 @@ input[type="submit"]:hover{
     border-radius: 50px;
     background-color: white;
     padding: 5px 8px;
-    margin-right: 10px
+    margin-right: 10px;
+    margin-left:45px;
 }
 section{
     margin-left: 45px;
@@ -140,8 +143,7 @@ section{
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap:10px !important;
+    grid-gap:10px;
 }
 .main{
     display:grid;
@@ -156,7 +158,7 @@ section{
 .side{
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows: 2.6em 20% 20% 20%;
+    grid-template-rows: 2.6em 150px 150px 150px;
     grid-gap:25px;
     background-color:rgb(218, 215, 215);
     border-radius: 15px 15px;
@@ -167,20 +169,25 @@ section{
 .col{
     display: grid;
     grid-template-columns:40% 60%;
+    grid-template-rows: 150px;
 }
 .col1{
     display: grid;
     grid-template-columns:40% 60%;
+    grid-template-rows: 150px;
 }
 .col2{
     display: grid;
     grid-template-columns:40% 60%;
+    grid-template-rows: 150px;
 }
 .activitie{
     display:grid;
+   
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: 2.6em 1fr ;
     grid-gap: 20px;
+   
     height: 400px;
     margin-top: 10px;
     margin-left: 45px;
@@ -292,6 +299,7 @@ section{
 
 .col1 div:nth-child(1) {
     background-color:#ffffff;
+    border-radius:  15px 15px;
 }
 .col1 div:nth-child(2) {
     background-color:#ffffff;
@@ -299,6 +307,7 @@ section{
 }
 .col2 div:nth-child(1) {
     background-color:#ffffff;
+    border-radius:  15px 15px;
 }
 .col2 div:nth-child(2) {
     background-color:#ffffff;
@@ -374,7 +383,7 @@ h4{
 }
 .side img{
     width: 100%;
-    height:95%;
+    height:94%;
     border-radius:15px 0 0 15px;
     padding: 5px 5px 0 5px;
     object-fit: cover;
@@ -418,45 +427,105 @@ h4{
     padding-left: 0;
 }
 
-
+@media screen and (min-width: 600px) {
+    #mobile{
+        display: none;
+ }
+    hr{
+        display: none;
+    }
+}
 @media screen and (max-width: 600px) {
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .hide{
         display: none;
     }
-    .activitie{
-display :block !important;
-    }
-.link a #icon p{
-    width: 50%;
+    .header1 .nav{
+     margin-left: 100px;
 }
+    .activitie{
+            display:inline-block;
+            height: 100%;
+    }
+    .row{
+        display: inline-block;
+}
+.link p{
+    width: 100%;
+}
+.infom p{
+    font-size: 12px;
+}
+.link a{
+ display: block;
+}
+
+.header1{
+    width: 400px;
+    margin-left: -0.1rem;
+}
+
+
 .container{
- height: 100vh;
-background-color: rgb(167, 162, 162);
-grid-template-columns:1fr;
-    grid-template-rows: 2fr;
-    border-radius: 15px;
-    grid-template-areas:unset;
-                    
+        display: grid;
+        grid-gap:10px !important;
+        grid-template-areas: 
+                'side'
+                'main';
 }
 
 .main{
-    display:table-column;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
-   
-}  
+    display: inline-block;
+    grid-area: main;
+     border-radius: 0;
+     
+     width: 400px;
+    height: 100%;
+    background-color: white;
+    margin-left: -45px;
+}
 .side{
-    display:table-column;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr;
+    grid-area: side;
+     border-radius: 0;
+     padding-left: 20px;
+     padding-right: 20px;
+     width: 350px;
 }
-
-
-section{
-    margin-left: 25px;
-    margin-right: 25px;
+.activitie img{
+    width: 100%;
+    height:100px;
 }
-
+.act2{
+   
+     margin-bottom: 10px;
 }
-
-
+.row3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.row1{
+    margin-bottom: 10px;
+}
+.row .row2 img{
+    width: 100%;
+    height:100px;
+}
+.two img{
+    width: 100%;
+    height:100px;
+    padding: 0;
+}
+.two{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2),
+    0 4px 16px 0 rgba(0,0,0,.2);
+     margin-bottom: 10px;
+}
+hr{
+    height: 2px;
+    border: none;
+    background:linear-gradient(to left,rgb(218, 215, 215), blue);
+}
+}
