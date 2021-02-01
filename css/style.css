@@ -435,7 +435,7 @@ h4{
         display: none;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     body{
         margin-left: 20px;
         margin-right: 20px;
