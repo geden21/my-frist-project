@@ -28,9 +28,6 @@ body {
          padding: 0;
          display: flex;
 }
-.p{
-          color:#DEEBFF;
-}
 .nav li{
           margin-left: 20px;
 }
@@ -47,7 +44,7 @@ input {
     box-sizing: border-box;
 }
 input[type="text"] {
-                   background:none;
+                   background:none;  
                    border-radius:  10px 0 0 10px;
                    width:200px;
                    height: 30px;
@@ -108,17 +105,25 @@ input[type="submit"]:hover{
         font-weight: bold;
         align-items: center;
 }
-#icon{
+.link a:hover {
+    color:#DEEBFF;
+}
+.filter a{
+border: none;
+padding: 0 0;
+}
+.icon i{
       border-radius: 50px;
       padding: 8px 10px;
       background-color:rgb(196, 223, 241);
       margin-left: -25px;
       margin-right: 10px;
-      color: blue;    
+      color: blue;  
 }
 .infom{
-     align-items: center;
-     flex-flow: wrap;
+    align-items: center;
+    flex-flow: wrap;
+    margin-left: 35px;
 }
 .infom p{
     font-size: 14px;
@@ -183,11 +188,9 @@ section{
 }
 .activitie{
     display:grid;
-   
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: 2.6em 1fr ;
     grid-gap: 20px;
-   
     height: 400px;
     margin-top: 10px;
     margin-left: 45px;
@@ -242,10 +245,6 @@ section{
     grid-column: 1/5;
     grid-row: 1;
 }
-.main div:nth-child(1) {
-    background-color: none;
-  
-}
 .main div:nth-child(2) {
   background-color: #ffffff;
   border-radius: 15px 15px;
@@ -270,12 +269,7 @@ section{
         background-color:#ffffff;
         border-radius: 15px 15px;
 }  
-.main div:nth-child(8) {
-     background-color: none;
-}  
-.side div:nth-child(1) {
-    background-color: none;
-}  
+
 .side div:nth-child(2) {
     background-color:#ffffff;
     border-radius:  15px  15px;
@@ -317,36 +311,36 @@ section{
     grid-column: 1/4;
 }
 #eight {
-       grid-column:1/4;
+    grid-column:1/4;
 }
 .two img{
-    width: 95%;
+    width: 100%;
     height:50%;
-border-radius:15px 15px 0 0;
-padding: 5px 5px 0 5px;
-object-fit: cover;
-object-position: 50% 50%;
+    border-radius:15px 15px 0 0;
+    padding: 5px 5px 0 5px;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .activitie img{
     width: 100%;
     height:80%;
-border-radius:15px 15px 0 0;
-object-fit: cover;
-object-position: 50% 50%;
+    border-radius:15px 15px 0 0;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .row img{
     width: 100%;
     height:70%;
-border-radius:15px 15px 0 0;
-object-fit: cover;
-object-position: 50% 50%;
+    border-radius:15px 15px 0 0;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .row .row2 img{
     width: 100%;
     height:70%;
-border-radius:0 0 15px 15px ;
-object-fit: cover;
-object-position: 50% 50%;
+    border-radius:0 0 15px 15px ;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 h4{
     padding-left: 15px;
@@ -361,18 +355,31 @@ h4{
 .cost{
     color:black;
 }
-#star1{
-    color:blue;
-}
 #star2{
+    color:lightgray;
+}
+#srar4{
     color:lightgray;
 }
 #star3{
     color:lightgray;
 }
+#star5{
+    color:lightgray;
+}
+#star6{
+    color:lightgray;
+}
+ #star7{
+        color:lightgray;
+}
+#star8{
+    color:lightgray;
+}
 .staricon{
     padding-left:15px;
     padding-bottom: 15px;
+    color:blue;
 }
 .side1{
     display: flex;
@@ -427,19 +434,19 @@ h4{
     padding-left: 0;
 }
 
-@media screen and (min-width: 600px) {
-    #mobile{
+
+
+@media screen and (min-width: 770px) {
+   #mobile{
         display: none;
  }
     hr{
         display: none;
     }
+   
 }
-@media screen and (max-width: 580px) {
-    body{
-        margin-left: 25px;
-       }
-    #mheader{
+@media screen and (max-width: 768px) {
+ #mheader{
         margin-left: 10px;
     }
     .hide{
@@ -447,70 +454,77 @@ h4{
     }
     
     .activitie{
-            display:inline-block;
-            width: 340px;
-            height: 100%;
-            margin-left: 5px;
+        display:inline-block;
+        margin: auto;
+        
     }
     .row{
         display: inline-block;
+        margin: 0;
+        padding: 0;
 }
 .link p{
     width: 100%;
     font-size: 14px;
 }
 .infom p{
-    font-size: 10px;
+    font-size: 0.5rem;
+}
+.infom{
+    margin-left:-20px;
 }
 .link a{
  display: block;
 }
-
 .header1{
-    width: 300px;
-    margin-right: 40px;
-    
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 100px;
 }
-
-
 .container{
-        display: grid;
-        grid-gap:10px !important;
+        display:grid;
+        grid-template-columns:100%;
         grid-template-areas: 
                 'side'
                 'main';
 }
-
 .main{
     display: inline-block;
     grid-area: main;
-    width:375px;
-    height: 100%;
+    height:100%;
     background-color: white;
-    margin-left: -45px;
-   
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.wrapper{
+        display:inline-block;
+        margin: 0;
 }
 .side{
     grid-area: side;
      border-radius: 0;
-     padding-left: 20px;
-     padding-right: 20px;
-     width: 340px;
+     padding-left: 25px;
+     padding-right: 25px;
 }
 .activitie img{
-    width: 100%;
+    max-width: 600px;
     height:100px;
+   
 }
+.activitie{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .footer{
+    margin: 0;
+    margin-top: 10px;
     display: block;
-    width: 340px;
-    margin-left: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .act2{
-   
-     margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 .row3{
     margin-bottom: 10px;
@@ -539,22 +553,16 @@ hr{
     background:linear-gradient(to left,rgb(218, 215, 215), blue);
 }
 input[type="text"] {
-    width:150px;
+    width:175px;
    }
    input[type="submit"] {
-    width: 70px;
+    width: 50px;
 }
-
 .link a{
-   
    border-radius: 70px;
    font-size: 12px;
 }
 h2{
     font-size: 18px;
-}
-section{
-    margin-left: 5px;
-   
 }
 }
